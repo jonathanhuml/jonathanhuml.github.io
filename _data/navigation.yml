@@ -12,8 +12,8 @@ main:
  # - title: "Portfolio"
  #   url: /portfolio/
         
-  - title: "Blog Posts"
-    url: /year-archive/
+  - title: "Essays"
+    url: /essays/
     
   - title: "CV"
     url: /files/Jon_Huml_Resume.pdf
