@@ -1,16 +1,30 @@
 ---
 permalink: /
-title: "About me"
-excerpt: "About me"
+title: "Welcome"
+excerpt: "Welcome"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-The name's Huml. Jon Huml. I'm from Durham, North Carolina--a land of highways, suburbs, and fried chicken. I completed my studies in Mathematics (B.A.) and Statistics (B.S.) just down the road at UNC-CH, and was affiliated with the [Grant](https://ece.ncsu.edu/people/egrant/) lab at NCSU for the last year a half of my studies, working on autonomous wheelchairs. 
+Thanks for visiting my site.
 
-I am currently a master's student at the School of Engineering and Applied Sciences at Harvard University, advised by [Demba Ba](https://www.seas.harvard.edu/person/demba-ba) within the [CRISP group](https://crisp.seas.harvard.edu/). My work focuses on algorithm unrolling for dictionary learning problems, with applications in neuroscience. I maintain a strong academic interest in computational decision-making and vision tasks from a neural perspective. One thread of this work that particularly excites me is the interpretability aspect: the weights of an unrolled network, unlike those of a typical neural network, have a one-to-one correspondence with the dictionary atoms and encodings. On the decision-making side, I also work with [Weiwei Pan](https://onefishy.github.io/) and [Finale Doshi_Velez](https://finale.seas.harvard.edu/) on off-policy evaluation tasks for reinforcement learning. 
+Fair warning: this is built in batches over the course of several months, and may be outdated. 
 
-I've greatly enjoyed my time here in Boston and at the university. As I seem to have caught the research bug, I will be applying to PhD programs in the fall of 2022. 
+Originally from Durham, North Carolina, I completed my studies in Mathematics (B.A.) and Statistics (B.S.) just down the road at UNC-CH. Go Heels. I was affiliated with the [Grant](https://ece.ncsu.edu/people/egrant/) lab at NCSU for the last year a half of my studies, working on autonomous wheelchairs. I've been working to understand and contribute to the field of artificial intelligence since 2017, but math lies at the heart of everything I do. Its study changes the way you think about the world (I suppose everything does, but math does so in a clearer way). 
+
+I then moved to the School of Engineering and Applied Sciences at Harvard University, advised by [Demba Ba](https://www.seas.harvard.edu/person/demba-ba) within the [CRISP group](https://crisp.seas.harvard.edu/). My research in Allston sits at the intersection of natural and artificial intelligence--namely, how we can inform computer vision tasks with inspiration from the primary visual cortex. Of course, we do this with deep learning (who isn't doing deep learning nowadays?). See my [Scholar](https://scholar.google.com/citations?user=wFocmRkAAAAJ&hl=en&oi=ao) page for more details. 
+
+My brain is stretched out across more than just math or AI or programming. Above all else, I enjoy writing. Essays, poems, screenplays, whatever--experimenting with form is itself one of the joys of writing. Life is about balance, and mathematical thinking would be impotent without clear writing skills (and vice versa). There are several forms of truth (literary truth, scientific truth, visual truth, etc.), and of these formats, the screenplay most amazes me in its ability to pursue truth. I read mounds of screenplays. With very few exceptions, you can never quite guarantee what'll play on screen a priori. Such is the magic of movies. 
+
+Feel free to read my essays. Or don't. And please feel free to reach out. 
+
+
+FAQS
+-----
+*What is the best way to reach you?*
+If you have my phone number, then text. Next, LinkedIn. I hate email. 
+
+
 
