@@ -13,8 +13,7 @@ main:
  #   url: /portfolio/
         
   - title: "Posts"
-    url: /posts/
- #   url: /year-archive/
+    url: /year-archive/
     
   - title: "CV"
     url: /files/Jon_Huml_Resume.pdf
