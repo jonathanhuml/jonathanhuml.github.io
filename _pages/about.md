@@ -20,7 +20,7 @@ I then moved to the School of Engineering and Applied Sciences at Harvard Univer
 
 *UPDATE (6/23):* I moved to Columbia's Statistics department to work on my PhD. I have added reflections on my time at Harvard in the essays section. Thanks to all of the folks who made my time in Boston possible, especially: my mom and dad, as well as my grandpa Wile; IACS peers and friends, especially Bill Zhai, Emilia Mazzolenis, and Albert Ge; members of the CRISP lab and Shubham Choudhary, who will soon be kicked out for his heinous criminal activity; the OG DURM Squad including Fat Kat Richard, "De Nang" Dale David, and Jimbo Jambs; Matt Damon for calling me "Tiny Tim" at the Good Will Hunting Bench; the amazing Maria Stavros Shevory for being the best physical therapist on the planet. 
 
-*UPDATE (9/23):* I have actually deferred my enrollment at Columbia until next Fall. However, I will be continuing research with [Dr. John Cunningham](https://stat.columbia.edu/~cunningham/) in the meantime. Please continue to reach out for collaborations, academic or non-academic, until I come back to New York next summer!
+*UPDATE (9/23):* I have actually deferred my enrollment at Columbia until next Fall. However, I will be continuing research with [John Cunningham](https://stat.columbia.edu/~cunningham/) in the meantime. Please continue to reach out for collaborations, academic or non-academic, until I come back to New York next summer!
 
 
 Personal
