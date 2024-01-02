@@ -8,8 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-build?
-
 Thanks for visiting my personal site. 
 
 Whatever government watch list you've now been added to by our association, I promise it's worth it. 
