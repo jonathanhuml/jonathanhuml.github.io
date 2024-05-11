@@ -16,10 +16,12 @@ In 2021, I moved to the School of Engineering and Applied Sciences at Harvard Un
 
 My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. See my [Scholar](https://scholar.google.com/citations?user=wFocmRkAAAAJ&hl=en&oi=ao) page for more details. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years. 
 
+As of 2024, I am pursuing my PhD in Statistics at Columbia University. 
+
 Personal
 =========
 
-Please feel free to check out the posts on this site, but I have begun to transfer more of this sort of stuff at [jonhumlatnight.com](http://www.jonhumlatnight.com/), a sort of goofy alter ego where I can be less professional than here. I'm starting to document more of my experience in New York [here](https://www.youtube.com/@jonhuml), and I maintain a [Substack](substack.com/@jonhuml) as well. 
+Please feel free to check out the posts on this site, but I have begun to transfer these posts to [jonhumlatnight.com](http://www.jonhumlatnight.com/). You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I'm starting to document more of my experience in New York [here](https://www.youtube.com/@jonhuml), and I maintain a [Substack](substack.com/@jonhuml) as well. 
 
 "Low Tech News Feed"
 =========
