@@ -18,8 +18,6 @@ My research in Allston blended natural and artificial intelligence, informing co
 
 As of 2024, I am pursuing my PhD in Statistics at Columbia University. 
 
-In my free time, I like shooting the breeze, going prematurely deaf just bopping in the stu, playing chess, pursuing inner peace, and being a sexually dedicated husband. 
-
 Personal
 =========
 
