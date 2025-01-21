@@ -16,7 +16,7 @@ Originally from Durham, North Carolina, I studied Mathematics (B.A.) and Statist
 
 In 2021, I moved to the School of Engineering and Applied Sciences at Harvard University to complete my master's in Computational Science. 
 
-My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex.Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
+My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
 
 
 
