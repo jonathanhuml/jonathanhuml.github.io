@@ -23,9 +23,9 @@ My research in Allston blended natural and artificial intelligence, informing co
 Personal
 =========
 
-If you're on X you can follow me [here](https://x.com/jonhumlatnight). I'm hoping to document more of my experience in New York and PhD life here in the coming year.
+If you're on X you can follow me [here](https://x.com/jonhumlatnight). I'm hoping to document more of my experience in New York and PhD life there in the coming year.
 
-There the posts on this site, and some stuff over at [jonhumlatnight.com](http://www.jonhumlatnight.com/). You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some older stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). 
+There are some posts on this site, and some stuff over at [jonhumlatnight.com](http://www.jonhumlatnight.com/). You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some older stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). 
 
 "Low Tech News Feed"
 =========
