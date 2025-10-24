@@ -25,7 +25,7 @@ Personal
 
 If you're on X you can follow me [here](https://x.com/jonhumlatnight). I'm hoping to document more of my experience in New York and PhD life there in the coming year.
 
-There are some posts on this site, and some stuff over at [jonhumlatnight.com](http://www.jonhumlatnight.com/). You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some older stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). 
+There are some posts on this site. You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some older stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). 
 
 "Low Tech News Feed"
 =========
@@ -34,8 +34,7 @@ There are some posts on this site, and some stuff over at [jonhumlatnight.com](h
 
 *UPDATE (6/24):* I am back in Upper West Side, and I brought THE WOO back with me.
 
-
-*UPDATE (9/23):* I have actually deferred my enrollment at Columbia until next Fall. However, I will be continuing research with [John Cunningham](https://stat.columbia.edu/~cunningham/) in the meantime. Please continue to reach out for collaborations, academic or non-academic, until I come back to New York next summer!
+*UPDATE (9/23):* I have actually deferred my enrollment at Columbia until next Fall to work on my research and programming projects. However, I will be continuing research with [John Cunningham](https://stat.columbia.edu/~cunningham/) in the meantime. Please continue to reach out for collaborations, academic or non-academic, until I come back to New York next summer!
 
 *UPDATE (6/23):* I moved to Columbia's Statistics department to work on my PhD. I have added reflections on my time at Harvard in the essays section. Thanks to all of the folks who made my time in Boston possible, especially: my mom and dad, as well as my grandpa Wile; IACS peers and friends, especially [Bill Zhai](https://billyzz.github.io/), Emilia Mazzolenis, and [Albert Ge](https://www.albertge.com/); members of the CRISP lab and Shubham Choudhary, who will soon be kicked out for his heinous criminal activity; the OG DURM Squad including Fat Kat Richard, "Da Nang" Dale David, and Jimbo Jambs; Matt Damon for calling me "Tiny Tim" at the Good Will Hunting Bench; the amazing Maria Stavros Shevory for being the best physical therapist on the planet. 
 
