@@ -18,6 +18,9 @@ In 2021, I moved to the School of Engineering and Applied Sciences at Harvard Un
 
 My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
 
+In 2024, I moved to New York to continue threads of my work on large-scale neural data analysis. 
+
+Beyond academia, I'm very much interested in starting my own company someday. 
 
 
 Personal
