@@ -18,17 +18,17 @@ In 2021, I moved to the School of Engineering and Applied Sciences at Harvard Un
 
 My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
 
-In 2024, I moved to New York to continue threads of my work on large-scale neural data analysis. 
-
-Beyond academia, I'm very much interested in starting my own company someday. 
+In 2024, I moved to Manhattan to continue threads of my work on large-scale neural data analysis. 
 
 
 Personal
 =========
 
-If you're on X you can follow me [here](https://x.com/jonhumlatnight). I'm hoping to document more of my experience in New York and PhD life there in the coming year.
+To the detriment of my wallet, I have been going deep down the photography rabbithole (I think a cocaine habit would've been more economically viable). I post some of my favorites on [Flickr](https://www.flickr.com/photos/jonhuml/)
 
-There are some posts on this site. You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some older stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). 
+If you're on X you can follow me [here](https://x.com/jonhumlatnight).
+
+There are some posts on this site. You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml).
 
 "Low Tech News Feed"
 =========
