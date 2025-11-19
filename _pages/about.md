@@ -12,23 +12,25 @@ Thanks for visiting my personal site!
 
 As of 2025, I am pursuing my PhD in Statistics at Columbia University. 
 
-Originally from Durham, North Carolina, I studied Mathematics (B.A.) and Statistics (B.S.) just down the road at UNC-Chapel Hill. I began research in the field of computer vision during my last year and a half of undergrad and I've been working in the field of AI ever since. 
+Originally from Durham, North Carolina, I studied Mathematics (B.A.) and Statistics (B.S.) at UNC-Chapel Hill. I began research in computer vision during undergrad and I've been working in the field of AI ever since. 
 
 In 2021, I moved to the School of Engineering and Applied Sciences at Harvard University to complete my master's in Computational Science. 
 
-My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
+My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years. See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
 
-In 2024, I moved to Manhattan to continue threads of my work on large-scale neural data analysis. 
+In 2024, I moved to Manhattan to continue threads of my work on large-scale neural data analysis. My work is heavily computational in nature. 
 
 
 Personal
 =========
 
-To the detriment of my wallet, I have been going deep down the photography rabbithole (I think a cocaine habit would've been more economically viable). I post some of my favorites on [Flickr](https://www.flickr.com/photos/jonhuml/)
+To the detriment of my wallet, I have been going deep down the photography rabbithole (I think a cocaine habit would've been more economically viable). I post some of my favorites on [Flickr](https://www.flickr.com/photos/jonhuml/). 
 
 If you're on X you can follow me [here](https://x.com/jonhumlatnight).
 
-There are some posts on this site. You can always ask me about graduate admissions or PhD life over LinkedIn/email/etc. but you will find an FAQ on exactly this subject over there. I also have some stuff on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml).
+Many people don't know that famous documentarian Ken Burns made a [series](https://www.youtube.com/watch?v=Opdb6CcF950) about my life. 
+
+I also have some older garbage on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). I just want to make cool stuff. 
 
 "Low Tech News Feed"
 =========
