@@ -12,19 +12,23 @@ Thanks for visiting my personal site!
 
 As of 2025, I am pursuing my PhD in Statistics at Columbia University. 
 
-Originally from Durham, North Carolina, I studied Mathematics (B.A.) and Statistics (B.S.) at UNC-Chapel Hill. I began research in computer vision during undergrad and I've been working in the field of AI ever since. 
+My research right now focuses on scalable spatiotemporal modeling of large-scale neural recordings. Right now, Bayesian methods are computationally infeasible and require approximation to work. You can't get around approximation, but you can make the uncertainty quantification more meaningful. We're currently analyzing over two orders of magnitude more neurons than the SOTA Bayesian methods! See [here](https://www.jonhuml.com/files/main.pdf) for an abstract on this project that is currently in the submission process. 
 
-In 2021, I moved to the School of Engineering and Applied Sciences at Harvard University to complete my master's in Computational Science. 
+I am originally from Durham, North Carolina, I studied Mathematics (B.A.) and Statistics (B.S.) at UNC-Chapel Hill. I began research in computer vision during undergrad and I've been working in the field of AI ever since. 
+
+In 2021, I moved to the School of Engineering and Applied Sciences at Harvard University to complete my master's in Computational Science, where I started my research in computational neuroscience. 
 
 My research in Allston blended natural and artificial intelligence, informing computer vision tasks with inspiration from the primary visual cortex. Thank you to the wonderful [CRISP group](https://crisp.seas.harvard.edu/) for an enlightening and productive two years. See my [Scholar](https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao) page for more details and ongoing work.
 
-In 2024, I moved to Manhattan to continue threads of my work on large-scale neural data analysis. My work is heavily computational in nature. 
+In 2024, I moved to Manhattan to continue threads of my work on neural data analysis. 
+
+My work is heavily computational in nature. I like getting inside the GPU and thinking about how memory moves. I believe that scalability is the biggest predominating factor for most algorithm classes today. 
 
 
 Personal
 =========
 
-To the detriment of my wallet, I have been going deep down the photography rabbithole (I think a cocaine habit would've been more economically viable). I post some of my favorites on [Flickr](https://www.flickr.com/photos/jonhuml/). 
+To the detriment of my wallet, I have been going deep down the photography rabbithole (I think a drug habit would've been more economically viable). I post some of my favorites on [Flickr](https://www.flickr.com/photos/jonhuml/). 
 
 If you're on X you can follow me [here](https://x.com/jonhumlatnight).
 
