@@ -12,7 +12,7 @@ Thanks for visiting my personal site!
 
 As of 2025, I am pursuing my PhD in Statistics at Columbia University. 
 
-My research right now focuses on scalable spatiotemporal modeling of large-scale neural recordings. Right now, Bayesian methods are computationally infeasible and require approximation to work. You can't get around approximation, but you can make the uncertainty quantification more meaningful. We're currently analyzing over two orders of magnitude more neurons than the SOTA Bayesian methods! See [here](https://www.jonhuml.com/files/main.pdf) for an abstract on this project that is currently in the submission process. 
+My research focuses on scalable spatiotemporal modeling of large-scale neural recordings. Bayesian methods, for the most part, are computationally infeasible and require approximation to work. You can't get around approximation, but you can make the uncertainty quantification more meaningful. We're currently analyzing over two orders of magnitude more neurons than the SOTA Bayesian methods! See [here](https://www.jonhuml.com/files/main.pdf) for an abstract on this project that is currently in the submission process. 
 
 I am originally from Durham, North Carolina, I studied Mathematics (B.A.) and Statistics (B.S.) at UNC-Chapel Hill. I began research in computer vision during undergrad and I've been working in the field of AI ever since. 
 
