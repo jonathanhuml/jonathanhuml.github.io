@@ -32,8 +32,6 @@ To the detriment of my wallet, I have been going deep down the photography rabbi
 
 If you're on X you can follow me [here](https://x.com/jonhumlatnight).
 
-Many people don't know that famous documentarian Ken Burns made a [series](https://www.youtube.com/watch?v=Opdb6CcF950) about my life. 
-
 I also have some older garbage on [Youtube](https://www.youtube.com/@jonhuml) and [Substack](substack.com/@jonhuml). I just want to make cool stuff. 
 
 "Low Tech News Feed"
