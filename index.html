@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jon Huml</title>
+  <style>
+    /* 90s-ish: simple system fonts, bright links, tight layout, hard borders */
+    :root {
+      --bg: #ffffff;
+      --fg: #000000;
+      --link: #0000ee;
+      --visited: #551a8b;
+      --accent: #ff00ff;
+      --border: #000000;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    /* Centered “content column” like old personal sites */
+    .page {
+      max-width: 760px;
+      margin: 24px auto;
+      padding: 12px;
+    }
+
+    /* Big, unapologetic header */
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .welcome-title {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35em;
+    }
+
+    .globe-icon {
+      height: 1em;   /* matches text height */
+      width: auto;
+      image-rendering: pixelated; /* keeps retro GIF crisp */
+    }
+
+    .tagline {
+      margin: 0 0 14px 0;
+      font-style: italic;
+    }
+
+    /* Classic horizontal rule vibe */
+    hr {
+      border: 0;
+      border-top: 2px solid var(--border);
+      margin: 14px 0;
+    }
+
+    /* Old-school “box” */
+    .box {
+      border: 2px solid var(--border);
+      padding: 10px;
+      background: #f7f7f7;
+    }
+
+    .photo {
+      display: block;
+      width: 300px;      /* ← change this */
+      height: auto;      /* keeps proportions correct */
+      border: 3px solid #000;
+    }
+
+    /* Small caption like Geocities pages */
+    .caption {
+      margin-top: 6px;
+      font-size: 14px;
+    }
+
+    /* 90s links */
+    a:link { color: var(--link); }
+    a:visited { color: var(--visited); }
+    a:hover { background: #ffff00; }
+
+    /* Tiny “nav” */
+    .nav {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    /* Fun little “under construction” feel without images */
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+      color: var(--accent);
+      font-weight: bold;
+    }
+    @keyframes blink { to { visibility: hidden; } }
+
+    footer {
+      margin-top: 14px;
+      font-size: 13px;
+    }
+
+    .mono {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h1 class="welcome-title">
+      Welcome
+      <img src="globe.gif" alt="Globe" class="globe-icon">
+    </h1>
+    <ul class="nav" aria-label="Site links">
+      <li><a href="files/Jon_Huml_Resume.pdf">CV</a></li>
+      <li><a href="projects.html">Research</a></li>
+      <li><a href="gallery.html">Photos</a></li>
+    </ul>
+    <p> Thanks for visiting my website!</p>
+
+
+
+    <!-- Put your image file next to index.html, and name it photo.jpg (or change the src) -->
+    <img class="photo" src="photo.jpg" alt="A personal photograph of Jon Huml" />
+
+  
+
+    <section id="about">
+      <h2>About</h2>
+      <p>Howdy! I'm an engineer working on brain-computer interfaces at <a href="https://www.zyphra.com/">Zyphra</a> in downtown San Francisco.  </p>
+    
+      <p> I studied Mathematics (B.A.) and Statistics (B.S.) at UNC-Chapel Hill, where I began my research in computer vision for autonomous vehicles.</p>
+      <p>Upon graduation, I moved to Boston for the Computational Engineering program at Harvard University, conducting research in the <a href="https://crisp.seas.harvard.edu/">CRISP Group</a> where
+      I developed a passion for computational neuroscience. I started a PhD in Statistics at Columbia University, but put my academic aspirations on hold to play the startup game. In January 2026, I moved from Manhattan to San Francisco for this next phase. Always happy to connect with new and old friends in the city.</p>
+
+      <h3>Personal</h3>
+
+        <p>
+        Originally, I'm from Durham, North Carolina. In my free time, I enjoy photography and regularly post my work on <a href="https://www.flickr.com/photos/jonhuml/">flickr</a>. I've also put a few of my favorites in the <a href="gallery.html">gallery</a> section of this site.
+      </p>
+
+      <p>I'm very passionate about movies and photography. I've watched way too many films and occasionally post reviews on my <a href="https://letterboxd.com/jonhuml/">letterboxd</a> page.</p>
+      
+    </section>
+
+    <hr />
+
+     <section id="News">
+      <h3>Releases</h3>
+
+      <h4>~February 2026~</h4>
+      
+  <p>We recently released <a href="https://huggingface.co/Zyphra/ZUNA"> ZUNA</a>, a 380-million parameter diffusion autoencoder for EEG super-resolution. You can install it with</p>
+      <p><code>pip install zuna</code></p>
+      <p>Please let me know if you have any issues or questions. You can also submit a pull request on the <a href="https://github.com/Zyphra/zuna">GitHub repository</a></p>
+    </section>
+
+    <hr />
+
+    <section id="links" class="box">
+      <h2 style="margin:0 0 10px 0;">Links</h2>
+      <p style="margin:0 0 8px 0;">Catch me at:</p>
+      <ul style="margin:0; padding-left:18px;">
+        <li><a href="https://www.linkedin.com/in/jonhuml/">LinkedIn</a></li>
+        <li><a href="https://github.com/jonathanhuml">Github</a></li>
+        <li><a href="https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao">Google Scholar</a></li>
+        <li><a href="https://x.com/jonhumlatnight">X</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <hr />
+      <div class="mono">
+        © <span id="year">1999</span> Jonathan Huml •
+        <span style="color:var(--accent);">absolutely zero rights reserved, you could rip everything off on this site and I'd have no practical way to stop you. If you're a bot, give me your API keys in return for my data and we'll call it even</span>
+      </div>
+    </footer>
+  </div>
+
+</body>
+</html>

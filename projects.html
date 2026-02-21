@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jon Huml • Projects</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #000000;
+      --link: #0000ee;
+      --visited: #551a8b;
+      --accent: #ff00ff;
+      --border: #000000;
+    }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+      line-height: 1.35;
+    }
+
+    .page {
+      max-width: 760px;
+      margin: 24px auto;
+      padding: 12px;
+    }
+
+    h1 {
+      margin: 0 0 8px 0;
+      font-size: 34px;
+      font-weight: bold;
+      letter-spacing: 0.5px;
+    }
+
+    .tagline {
+      margin: 0 0 14px 0;
+      font-style: italic;
+    }
+
+    hr {
+      border: 0;
+      border-top: 2px solid var(--border);
+      margin: 14px 0;
+    }
+
+    .box {
+      border: 2px solid var(--border);
+      padding: 10px;
+      background: #f7f7f7;
+    }
+
+    a:link { color: var(--link); }
+    a:visited { color: var(--visited); }
+    a:hover { background: #ffff00; }
+
+    .nav {
+      margin: 0 0 10px 0;
+      padding: 0;
+      list-style: none;
+    }
+    .nav li {
+      display: inline;
+      margin-right: 10px;
+    }
+
+    .mono {
+      font-family: "Courier New", Courier, monospace;
+      font-size: 13px;
+    }
+
+    .filelist {
+      margin: 0;
+      padding-left: 18px;
+    }
+    .filelist li {
+      margin: 6px 0;
+    }
+
+    footer {
+      margin-top: 14px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h1>Projects</h1>
+
+    <ul class="nav" aria-label="Site links">
+      <li><a href="index.html">Home</a></li>
+       <li><a href="files/Jon_Huml_Resume.pdf">CV</a></li>
+      <li><a href="gallery.html">Photos</a></li>
+    </ul>
+    
+
+    <p class="tagline">Assorted non-archival work (PDFs, notes, and writeups).</p>
+
+
+    <hr />
+
+    <section class="box">
+
+        <p style="margin:0 0 10px 0;">
+        General themes of my research include: biologically-plausible computation, probabilistic modeling, scalable sequence modeling and geometry-aware representations for brain-computer interfaces.
+      </p>
+      <p style="margin:0 0 10px 0;">
+        All peer-reviewed publications can be found on my
+        <a href="https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao">Scholar profile</a>.
+      </p>
+
+      <p style="margin:0 0 10px 0;">
+        Below are some non-archival projects I've worked on over the years, ranging from differential privacy to computational physics:
+      </p>
+
+      <ul class="filelist">
+         <li><a href="files/main.pdf">Computation-Aware State-Space Models for Neural Data</a></li>
+        <li><a href="files/cs208.pdf">Intermediate Models of Differential Privacy: Properties, Tradeoffs, and Connections</a></li>
+        <li><a href="files/stat234.pdf">“Which Off-Policy Evaluation (OPE) Method, and When?”</a></li>
+        <li><a href="files/am205.pdf">Ising Models: Numerical Simulations and Physical Applications</a></li>
+        <li><a href="files/am207.pdf">A Critical Analysis of BayLIME</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <hr />
+      <div class="mono">
+        © <span id="year">1999</span> Jonathan Huml •
+        made with <span style="color:var(--accent);">pure HTML + CSS + alcohol</span>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Gallery</title>
+  <style>
+    :root{
+      --bg:#fff; --fg:#000; --link:#00e; --visited:#551a8b; --border:#000; --soft:#f7f7f7;
+    }
+
+    html,body{
+      margin:0;
+      padding:0;
+      background:var(--bg);
+      color:var(--fg);
+      font-family:"Times New Roman", Times, serif;
+      font-size:16px;
+      line-height:1.35;
+    }
+
+    .page{max-width:900px;margin:24px auto;padding:12px;}
+    h1{margin:0 0 8px 0;font-size:34px;}
+
+    a:link{color:var(--link);}
+    a:visited{color:var(--visited);}
+    a:hover{background:#ff0;}
+
+    hr{border:0;border-top:2px solid var(--border);margin:14px 0;}
+
+    .box{
+      border:2px solid var(--border);
+      padding:10px;
+      background:var(--soft);
+    }
+
+    .nav{margin:0;padding:0;list-style:none;}
+    .nav li{display:inline;margin-right:10px;}
+
+    /* Grid */
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:10px;
+    }
+    @media (max-width:720px){
+      .grid{grid-template-columns:repeat(2, 1fr);}
+    }
+    @media (max-width:420px){
+      .grid{grid-template-columns:1fr;}
+    }
+
+    /* Square thumbnails */
+    .tile{
+      display:block;
+      border:2px solid var(--border);
+      background:#fff;
+      aspect-ratio:1 / 1;
+      overflow:hidden;
+    }
+    .tile img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      display:block;
+    }
+    .tile:focus{outline:3px dotted var(--border); outline-offset:2px;}
+
+    /* Lightbox */
+    .lightbox{
+      position:fixed;
+      inset:0;
+      display:none;
+      padding:18px;
+      background:rgba(255,255,255,0.95);
+      z-index:999;
+
+      /* modal scrolls, not background */
+      overflow:auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .lightbox:target{ display:block; }
+
+    /* Lock background scroll (modern browsers) */
+    body:has(.lightbox:target){ overflow:hidden; }
+
+    .lightbox-inner{
+      max-width:1000px;
+      margin:0 auto;
+      border:3px solid var(--border);
+      background:#fff;
+      padding:10px;
+    }
+
+    .lb-top{
+      display:flex;
+      justify-content:space-between;
+      align-items:baseline;
+      margin-bottom:10px;
+      gap:10px;
+    }
+
+    .mono{
+      font-family:"Courier New", Courier, monospace;
+      font-size:13px;
+    }
+
+    .close{
+      font-weight:bold;
+      text-decoration:none;
+      padding:2px 6px;
+      border:2px solid var(--border);
+      background:var(--soft);
+    }
+
+    /* Fixed viewport so opening doesn't feel like it “zooms the page” */
+    .lb-viewport{
+      border:2px solid var(--border);
+      background:#fff;
+      height:80vh;
+
+      display:flex;
+      align-items:center;
+      justify-content:center;
+
+      overflow:hidden;
+    }
+
+    /* Preserve proportions */
+    .lb-viewport img{
+      max-width:100%;
+      max-height:100%;
+      width:auto;
+      height:auto;
+      object-fit:contain;
+      display:block;
+    }
+
+    .lb-nav{
+      display:flex;
+      justify-content:space-between;
+      margin-top:10px;
+      gap:10px;
+    }
+
+    .lb-nav a{
+      text-decoration:none;
+      border:2px solid var(--border);
+      background:var(--soft);
+      padding:4px 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h1>a sample of favorites</h1>
+    <p class="mono">new yawwk!!!</p>
+
+    <ul class="nav" aria-label="Site links">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+
+    <hr />
+
+    <section class="box">
+      <div class="grid" aria-label="Gallery grid">
+        <a class="tile" href="#p1"><img src="gallery/p1.jpg" alt="Photo 1"></a>
+        <a class="tile" href="#p2"><img src="gallery/p2.jpg" alt="Photo 2"></a>
+        <a class="tile" href="#p3"><img src="gallery/p3.jpg" alt="Photo 3"></a>
+        <a class="tile" href="#p4"><img src="gallery/p4.jpg" alt="Photo 4"></a>
+        <a class="tile" href="#p5"><img src="gallery/p5.jpg" alt="Photo 5"></a>
+        <a class="tile" href="#p6"><img src="gallery/p6.jpg" alt="Photo 6"></a>
+        <a class="tile" href="#p7"><img src="gallery/p7.jpg" alt="Photo 7"></a>
+        <a class="tile" href="#p8"><img src="gallery/p8.jpg" alt="Photo 8"></a>
+        <a class="tile" href="#p9"><img src="gallery/p9.jpg" alt="Photo 9"></a>
+      </div>
+    </section>
+
+    <footer class="mono">
+      <hr />
+      Images live in <strong>gallery/</strong>
+    </footer>
+  </div>
+
+  <!-- Lightboxes -->
+  <div id="p1" class="lightbox" role="dialog" aria-label="Photo 1 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 1</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p1.jpg" alt="Photo 1 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p9">← Prev</a>
+        <a href="#p2">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p2" class="lightbox" role="dialog" aria-label="Photo 2 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 2</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p2.jpg" alt="Photo 2 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p1">← Prev</a>
+        <a href="#p3">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p3" class="lightbox" role="dialog" aria-label="Photo 3 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 3</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p3.jpg" alt="Photo 3 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p2">← Prev</a>
+        <a href="#p4">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p4" class="lightbox" role="dialog" aria-label="Photo 4 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 4</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p4.jpg" alt="Photo 4 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p3">← Prev</a>
+        <a href="#p5">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p5" class="lightbox" role="dialog" aria-label="Photo 5 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 5</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p5.jpg" alt="Photo 5 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p4">← Prev</a>
+        <a href="#p6">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p6" class="lightbox" role="dialog" aria-label="Photo 6 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 6</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p6.jpg" alt="Photo 6 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p5">← Prev</a>
+        <a href="#p7">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p7" class="lightbox" role="dialog" aria-label="Photo 7 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 7</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p7.jpg" alt="Photo 7 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p6">← Prev</a>
+        <a href="#p8">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p8" class="lightbox" role="dialog" aria-label="Photo 8 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 8</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p8.jpg" alt="Photo 8 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p7">← Prev</a>
+        <a href="#p9">Next →</a>
+      </div>
+    </div>
+  </div>
+
+  <div id="p9" class="lightbox" role="dialog" aria-label="Photo 9 enlarged">
+    <div class="lightbox-inner">
+      <div class="lb-top">
+        <div class="mono">Photo 9</div>
+        <a class="close" href="#">Close</a>
+      </div>
+      <div class="lb-viewport">
+        <img src="gallery/p9.jpg" alt="Photo 9 enlarged">
+      </div>
+      <div class="lb-nav mono">
+        <a href="#p8">← Prev</a>
+        <a href="#p1">Next →</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
