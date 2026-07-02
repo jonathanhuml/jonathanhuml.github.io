@@ -151,10 +151,8 @@
     </footer>
   </div>
 
+  <script src="blog/posts-data.js"></script>
   <script>
-    const manifestPath = "blog/posts.json";
-    const postsPath = "blog/posts/";
-
     const pageTitle = document.getElementById("page-title");
     const pageSubtitle = document.getElementById("page-subtitle");
     const postList = document.getElementById("post-list");
@@ -189,36 +187,6 @@
       });
 
       return html;
-    }
-
-    function slugFromFile(file) {
-      return file.replace(/\.md$/i, "");
-    }
-
-    function parseFrontMatter(raw) {
-      const match = raw.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
-
-      if (!match) {
-        return { metadata: {}, content: raw };
-      }
-
-      const metadata = {};
-
-      match[1].split("\n").forEach((line) => {
-        const separatorIndex = line.indexOf(":");
-
-        if (separatorIndex === -1) {
-          return;
-        }
-
-        const key = line.slice(0, separatorIndex).trim();
-        let value = line.slice(separatorIndex + 1).trim();
-
-        value = value.replace(/^["']|["']$/g, "");
-        metadata[key] = value;
-      });
-
-      return { metadata, content: match[2].trim() };
     }
 
     function firstParagraph(markdown) {
@@ -348,37 +316,20 @@
       });
     }
 
-    async function loadPost(entry) {
-      const response = await fetch(`${postsPath}${entry.file}`);
-
-      if (!response.ok) {
-        throw new Error(`Could not load ${entry.file}`);
+    function loadPosts() {
+      if (!Array.isArray(window.BLOG_POSTS)) {
+        throw new Error("blog/posts-data.js was not loaded.");
       }
 
-      const raw = await response.text();
-      const { metadata, content } = parseFrontMatter(raw);
-      const slug = entry.slug || metadata.slug || slugFromFile(entry.file);
-
-      return {
-        slug,
-        title: metadata.title || slug,
-        date: metadata.date || "",
-        content,
-        excerpt: firstParagraph(content)
-      };
-    }
-
-    async function loadPosts() {
-      const response = await fetch(manifestPath);
-
-      if (!response.ok) {
-        throw new Error("Could not load blog post manifest.");
-      }
-
-      const manifest = await response.json();
-      const posts = await Promise.all(manifest.map(loadPost));
-
-      return posts.sort((a, b) => new Date(`${b.date}T00:00:00Z`) - new Date(`${a.date}T00:00:00Z`));
+      return window.BLOG_POSTS.map((post) => ({
+        slug: post.slug,
+        title: post.title || post.slug,
+        date: post.date || "",
+        content: post.content || "",
+        excerpt: firstParagraph(post.content || "")
+      })).sort((a, b) => {
+        return new Date(`${b.date}T00:00:00Z`) - new Date(`${a.date}T00:00:00Z`);
+      });
     }
 
     function renderPostList(posts) {
@@ -386,7 +337,7 @@
       pageSubtitle.textContent = "Notes and occasional writeups.";
       postView.hidden = true;
       postList.hidden = false;
-      footerNote.innerHTML = 'Blog posts live in <code>blog/posts</code> as Markdown files with front matter.';
+      footerNote.innerHTML = 'Blog posts are sourced from Markdown files in <code>blog/posts</code>.';
 
       if (!posts.length) {
         postList.innerHTML = '<p class="status">No posts yet.</p>';
@@ -428,9 +379,9 @@
       `;
     }
 
-    async function main() {
+    function main() {
       try {
-        const posts = await loadPosts();
+        const posts = loadPosts();
         const postSlug = new URLSearchParams(window.location.search).get("post");
 
         if (postSlug) {
