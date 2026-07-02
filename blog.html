@@ -4,6 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Jon Huml &bull; Blog</title>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [["$", "$"], ["\\(", "\\)"]],
+        displayMath: [["$$", "$$"], ["\\[", "\\]"]]
+      },
+      svg: {
+        fontCache: "global"
+      },
+      startup: {
+        typeset: false,
+        ready: () => {
+          MathJax.startup.defaultReady();
+          window.BLOG_MATH_READY = true;
+
+          if (window.typesetBlogMath) {
+            window.typesetBlogMath();
+          }
+        }
+      }
+    };
+  </script>
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
   <style>
     :root {
       --bg: #ffffff;
@@ -158,6 +181,24 @@
     const postList = document.getElementById("post-list");
     const postView = document.getElementById("post-view");
     const footerNote = document.getElementById("footer-note");
+
+    function typesetMath(target) {
+      if (!window.BLOG_MATH_READY || !window.MathJax || !window.MathJax.typesetPromise) {
+        return;
+      }
+
+      if (window.MathJax.typesetClear) {
+        window.MathJax.typesetClear([target]);
+      }
+
+      window.MathJax.typesetPromise([target]).catch((error) => {
+        console.error("MathJax failed to render:", error);
+      });
+    }
+
+    window.typesetBlogMath = () => {
+      typesetMath(postView.hidden ? postList : postView);
+    };
 
     function escapeHtml(value) {
       return String(value)
@@ -341,6 +382,7 @@
 
       if (!posts.length) {
         postList.innerHTML = '<p class="status">No posts yet.</p>';
+        window.typesetBlogMath();
         return;
       }
 
@@ -356,6 +398,8 @@
           </article>
         `;
       }).join("");
+
+      window.typesetBlogMath();
     }
 
     function renderSinglePost(post) {
@@ -366,6 +410,7 @@
       postView.innerHTML = renderMarkdown(post.content);
       footerNote.innerHTML = '<a href="blog.html">Back to blog</a>';
       document.title = `${post.title} \u2022 Jon Huml`;
+      window.typesetBlogMath();
     }
 
     function renderError(error) {

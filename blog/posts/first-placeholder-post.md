@@ -3,9 +3,16 @@ title: "First Placeholder Post"
 date: 2026-06-30
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer at ligula
-vitae neque pretium porttitor. Suspendisse potenti. Praesent in lacus nec
-justo lacinia faucibus, sed porttitor ipsum.
+Lorem ipsum dolor sit amet, $\int_0^1 x^2\,dx = \frac{1}{3}$ and
+$\nabla \cdot \mathbf{F} = 0$, consectetur adipiscing elit. Integer at ligula
+vitae neque pretium porttitor. Suspendisse potenti. Praesent in lacus nec justo
+lacinia faucibus, sed porttitor ipsum.
+
+$$
+\nabla^2 \phi =
+\frac{\partial^2 \phi}{\partial x^2} +
+\frac{\partial^2 \phi}{\partial y^2}
+$$
 
 ## A Small Section
 
