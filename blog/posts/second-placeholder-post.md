@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Second Placeholder Post"
 date: 2026-06-15
 ---

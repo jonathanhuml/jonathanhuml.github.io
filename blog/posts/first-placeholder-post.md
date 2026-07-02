@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "First Placeholder Post"
 date: 2026-06-30
 ---
