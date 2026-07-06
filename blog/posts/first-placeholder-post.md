@@ -1,11 +1,13 @@
 ---
-title: "The OG State-Space Model"
+title: "The OG State-Space Model (or Why Rudie Can't Fail)"
 date: 2026-07-06
 ---
 
 Before Mamba and before the recurrent neural networks, there was the Kalman filter. 
 
-The Kalman filter is over 60 years old at this point, originally formulated in Kalman's "A New Approach to Linear Filtering and Prediction Problems" (1960). 
+The Kalman filter is over 60 years old, originally formulated in Rudolf Kalman's "A New Approach to Linear Filtering and Prediction Problems" (1960). 
+
+It attempts to solve the first-order differential equation:
 
 $$
 \begin{align}
@@ -13,6 +15,8 @@ h_t &= A h_{t-1} + B x_t, \\
 y_t &= C h_t + D x_t.
 \end{align}
 $$
+
+under a Gaussian-noise model. That makes it the "ordinary least squares" of dynamical systems, which is to say, the absolute OG of all the models that have followed it. 
 
 Lorem ipsum dolor sit amet, $\int_0^1 x^2\,dx = \frac{1}{3}$ and
 $\nabla \cdot \mathbf{F} = 0$, consectetur adipiscing elit. Integer at ligula
