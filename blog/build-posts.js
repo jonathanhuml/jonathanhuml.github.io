@@ -62,10 +62,22 @@ const posts = fs.readdirSync(postsDir)
     return new Date(`${b.date}T00:00:00Z`) - new Date(`${a.date}T00:00:00Z`);
   });
 
-fs.writeFileSync(
-  outputPath,
-  `window.BLOG_POSTS = ${JSON.stringify(posts, null, 2)};\n`,
-  "utf8"
-);
+const output = `window.BLOG_POSTS = ${JSON.stringify(posts, null, 2)};\n`;
+
+if (process.argv.includes("--check")) {
+  const existingOutput = fs.existsSync(outputPath)
+    ? fs.readFileSync(outputPath, "utf8")
+    : "";
+
+  if (existingOutput !== output) {
+    console.error("blog/posts-data.js is out of date. Run `node blog/build-posts.js`.");
+    process.exit(1);
+  }
+
+  console.log("blog/posts-data.js is up to date.");
+  process.exit(0);
+}
+
+fs.writeFileSync(outputPath, output, "utf8");
 
 console.log(`Wrote ${posts.length} posts to ${path.relative(process.cwd(), outputPath)}`);

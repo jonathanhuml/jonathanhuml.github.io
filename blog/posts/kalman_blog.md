@@ -7,12 +7,12 @@ Before Mamba and before the recurrent neural networks, there was the Kalman filt
 
 The Kalman filter is over 60 years old, originally formulated in Rudolf Kalman's "A New Approach to Linear Filtering and Prediction Problems" (1960). 
 
-It attempts to solve the first-order differential equation:
+The algorithm does exact inference for the first-order differential equation:
 
 $$
 \begin{align}
-h_t &= A h_{t-1} + B x_t, \\
-y_t &= C h_t + D x_t.
+h_t &= A h_{t-1}, \\
+y_t &= C h_t.
 \end{align}
 $$
 

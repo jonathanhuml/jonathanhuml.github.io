@@ -220,12 +220,19 @@
     }
 
     function renderInline(markdown) {
+      const codeTokens = [];
       let html = escapeHtml(markdown);
 
-      html = html.replace(/`([^`]+)`/g, "<code>$1</code>");
+      html = html.replace(/`([^`]+)`/g, (_, code) => {
+        const token = `\u0000CODE${codeTokens.length}\u0000`;
+        codeTokens.push(`<code>${code}</code>`);
+        return token;
+      });
+      html = html.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
       html = html.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, text, href) => {
         return `<a href="${safeHref(href)}">${text}</a>`;
       });
+      html = html.replace(/\u0000CODE(\d+)\u0000/g, (_, index) => codeTokens[Number(index)]);
 
       return html;
     }
