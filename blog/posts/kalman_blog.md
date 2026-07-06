@@ -9,7 +9,8 @@ The Kalman filter is over 60 years old, originally formulated in Rudolf Kalman's
 
 Now, why study an algorithm that your grandma probably used? And why *was* grandma trying to model dynamical systems, anyway? Analogous to Ordinary Least Squares (OLS), the Kalman filter does exact inference in *linear* (state transitions are defined by a linear map between states at time $t$ and $t+1$), *Gaussian* (states are not deterministic, but random with noise sampled from a normal distribution) dynamical systems. 
 
-That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply. 
+That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply.
+
 
 The algorithm does exact inference for the linear, first-order state-space equations:
 
