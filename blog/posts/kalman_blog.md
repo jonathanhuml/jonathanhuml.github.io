@@ -3,13 +3,13 @@ title: "The OG State-Space Model and its Lessons on Entropy (or Why Rudie Can't 
 date: 2026-07-06
 ---
 
-Before Mamba and before the recurrent neural networks, there was the Kalman filter. 
+Before Mamba and before recurrent neural networks, there was the Kalman filter. 
 
 The Kalman filter is over 60 years old, originally formulated in Rudolf Kalman's "A New Approach to Linear Filtering and Prediction Problems" (1960). 
 
 Now, why study an algorithm that your grandma probably used? And why *was* grandma trying to model dynamical systems, anyway? Analogous to Ordinary Least Squares (OLS), the Kalman filter does exact inference in *linear* (state transitions are defined by a linear map between states at time $t$ and $t+1$), *Gaussian* (states are not deterministic, but random with noise sampled from a normal distribution) dynamical systems. 
 
-It is probably the simplest possible dynamical system we can study, which is why it's a staple of the engineering discipline. 
+That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply. 
 
 The algorithm does exact inference for the linear, first-order state-space equations:
 
