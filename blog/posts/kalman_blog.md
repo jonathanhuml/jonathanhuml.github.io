@@ -25,22 +25,54 @@ $$
 
 Imagine some latent state $x_t$ evolving in time, while we only get noisy observations $y_t$. Under a Gaussian-noise model, that makes the Kalman filter the "ordinary least squares" of dynamical systems, which is to say, the absolute OG of all the models that have followed it. 
 
-Lorem ipsum dolor sit amet, $\int_0^1 x^2\,dx = \frac{1}{3}$ and
-$\nabla \cdot \mathbf{F} = 0$, consectetur adipiscing elit. Integer at ligula
-vitae neque pretium porttitor. Suspendisse potenti. Praesent in lacus nec justo
-lacinia faucibus, sed porttitor ipsum.
-
-$$
-\nabla^2 \phi =
-\frac{\partial^2 \phi}{\partial x^2} +
-\frac{\partial^2 \phi}{\partial y^2}
+Prediction:
+$$\begin{align}
+\hat{x}_{t|t-1}
+    &= A\hat{x}_{t-1|t-1} + B u_t, \\
+P_{t|t-1}
+    &= A P_{t-1|t-1} A^\top + Q.
+\end{align}
 $$
 
-## A Small Section
 
-Donec vitae mauris a mi viverra suscipit. Curabitur faucibus, augue at
-condimentum tempor, lectus sem posuere risus, vel facilisis justo nibh ac
-erat. Morbi euismod sem sit amet augue interdum, sed dignissim leo blandit.
+Kalman Gain: 
+$$
+\begin{equation}
+K_t
+=
+P_{t|t-1} H^\top
+\left(
+H P_{t|t-1} H^\top + R
+\right)^{-1}.
+\end{equation}
+$$
 
-Aliquam erat volutpat. Nulla id ipsum sed erat suscipit blandit. Integer
-rhoncus mi sit amet orci lacinia, nec posuere lacus gravida.
+Update step:
+$$
+\begin{align}
+\hat{x}_{t|t}
+    &= \hat{x}_{t|t-1}
+    + K_t
+    \left(
+    z_t - H\hat{x}_{t|t-1}
+    \right), \\
+P_{t|t}
+    &= (I-K_tH)P_{t|t-1}.
+\end{align}
+$$
+
+Vanilla RNN:
+$$
+\begin{align}
+h_t
+    &= \phi\!\left(
+    W_h h_{t-1}
+    +
+    W_x x_t
+    +
+    b
+    \right), \\
+y_t
+    &= W_o h_t + b_o.
+\end{align}
+$$
