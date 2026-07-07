@@ -11,7 +11,7 @@ Now, why study an algorithm that your grandma probably used? And why *was* grand
 
 That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply.
 
-The basic setup is this: we have some latent (unobserved) process $x_1, \ldots, x_T$ evolving in time that we want to predict, but our observations $y_1, \ldots, y_T$ (our data) are noisy, transformed versions of that latent process. 
+The basic setup is this: we have some latent (unobserved) process $x_1, \ldots, x_T$ evolving in time that we want to predict, but our observations $y_1, \ldots, y_T$ (our data) are noisy, transformed versions of that latent process.  
 
 Given the linear, first-order state-space equations:
 
@@ -22,7 +22,9 @@ y_t &= C x_t + \eta_t,\qquad \eta_t \sim \mathcal{N}(0, R).
 \end{align}
 $$
 
-the Kalman filter attempts to compute the filtering distribution $P(x_t | y_{1:t})$
+the Kalman filter attempts to compute the filtering distribution $P(x_t | y_{1:t})$: that is, the probability of the latent distribution at time $t$ given all the previous observations. 
+
+Here is a graphical representation of that process: 
 
 ![A hidden Markov model (HMM): the latent states $x_t$ form a Markov chain, and each state emits an observation $y_t$.](./blog/images/hmm.png)
 
