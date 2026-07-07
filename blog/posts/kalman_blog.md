@@ -12,7 +12,7 @@ Now, why study an algorithm that your grandma probably used? And why *was* grand
 That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply.
 
 
-The algorithm does exact inference for the linear, first-order state-space equations:
+Given the linear, first-order state-space equations:
 
 $$
 \begin{align}
@@ -21,16 +21,18 @@ y_t &= C x_t + \eta_t,\qquad \eta_t \sim \mathcal{N}(0, R).
 \end{align}
 $$
 
+the Kalman filter attempts to compute the filtering distribution $P(x_t | y_{1:t})$
+
 ![A hidden Markov model (HMM): the latent states $x_t$ form a Markov chain, and each state emits an observation $y_t$.](./blog/images/hmm.png)
 
-Imagine some latent state $x_t$ evolving in time, while we only get noisy observations $y_t$. Under a Gaussian-noise model, that makes the Kalman filter the "ordinary least squares" of dynamical systems, which is to say, the absolute OG of all the models that have followed it. 
+Imagine some latent state $x_t \in \mathbb{R}^d$ evolving in time, while we only get noisy observations $y_t$. Under a Gaussian-noise model, that makes the Kalman filter the "ordinary least squares" of dynamical systems, which is to say, the absolute OG of all the models that have followed it. 
 
 Prediction:
 $$\begin{align}
 \hat{x}_{t|t-1}
-    &= A\hat{x}_{t-1|t-1} + B u_t, \\
+    &= A\hat{x}_{t-1} + B u_t, \\
 P_{t|t-1}
-    &= A P_{t-1|t-1} A^\top + Q.
+    &= A P_{t-1} A^\top + Q.
 \end{align}
 $$
 
