@@ -11,6 +11,7 @@ Now, why study an algorithm that your grandma probably used? And why *was* grand
 
 That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply.
 
+The basic setup is this: we have some latent (unobserved) process $x_1, \ldots, x_T$ evolving in time that we want to predict, but our observations $y_1, \ldots, y_T$ (our data) are noisy, transformed versions of that latent process. 
 
 Given the linear, first-order state-space equations:
 
