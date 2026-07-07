@@ -7,7 +7,11 @@ Before Mamba and before recurrent neural networks, there was the Kalman filter.
 
 The Kalman filter is over 60 years old, originally formulated in Rudolf Kalman's "A New Approach to Linear Filtering and Prediction Problems" (1960). 
 
-Now, why study an algorithm that your grandma probably used? And why *was* grandma trying to model dynamical systems, anyway? Analogous to Ordinary Least Squares (OLS), the Kalman filter does exact inference in *linear* (state transitions are defined by a linear map between states at time $t$ and $t+1$), *Gaussian* (states are not deterministic, but random with noise sampled from a normal distribution) dynamical systems. 
+Now, why study an algorithm that your grandma probably used? And why *was* grandma trying to model dynamical systems, anyway? Analogous to Ordinary Least Squares (OLS), the Kalman filter does exact inference in **linear**, **Gaussian** systems.
+
+By linear and Gaussian, I mean that state transitions are defined by a linear map between states at time $t$ and $t+1$, and that states are not deterministic, but are random with noise sampled from a normal distribution. While the inference algorithm isn't obvious, the setting is simple enough to reason about heuristically and figure out what exactly an "optimal RNN" might be doing under the hood. I also believe, as I will hope to show in this post, that online algorithms are potentially a bridge into understanding groupings of observations, or what we might call **tokenization** for continuous data. 
+
+I am very fascinated by this idea of a ``brain token,'' or the fundamental unit of thought. We can measure brain activity with electrodes, but those are just raw numbers. Over time, do the numbers group into words, sentences, thoughts? 
 
 That makes it one of the simplest possible dynamical system we can study, and therefore worth understanding deeply.
 
