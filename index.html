@@ -80,8 +80,37 @@
 
     #links {
       box-sizing: border-box;
-      width: 306px; /* Match the photo's width including its borders. */
+      width: 306px;
+      max-width: 100%;
       margin-top: 14px;
+    }
+
+    .release-entry {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 24px;
+      align-items: start;
+    }
+
+    .release-copy > :first-child { margin-top: 0; }
+    .release-copy > :last-child { margin-bottom: 0; }
+
+    .release-figure {
+      display: block;
+      width: 100%;
+      max-width: 368px;
+      height: auto;
+      aspect-ratio: 2 / 1;
+      object-fit: contain;
+      object-position: center top;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 600px) {
+      .release-entry {
+        grid-template-columns: 1fr;
+        gap: 16px;
+      }
     }
 
     /* Small caption like Geocities pages */
@@ -135,7 +164,8 @@
     <ul class="nav" aria-label="Site links">
       <li><a href="files/Jon_Huml_Resume.pdf">CV</a></li>
       <li><a href="projects.html">Research</a></li>
-      <li><a href="blog.html">Blog</a></li>
+      <!-- <li><a href="blog.html">Blog</a></li> -->
+      <li><a href="links.html">Links</a></li>
       <li><a href="gallery.html">Photos</a></li>
     </ul>
     <p> Thanks for visiting my website!</p>
@@ -144,16 +174,6 @@
 
     <!-- Put your image file next to index.html, and name it photo.jpg (or change the src) -->
     <img class="photo" src="photo.jpg" alt="A personal photograph of Jon Huml" />
-
-    <section id="links" class="box">
-      <h2 style="margin:0 0 10px 0;">Links</h2>
-      <ul style="margin:0; padding-left:18px;">
-        <li><a href="https://www.linkedin.com/in/jonhuml/">LinkedIn</a></li>
-        <li><a href="https://github.com/jonathanhuml">Github</a></li>
-        <li><a href="https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao">Google Scholar</a></li>
-        <li><a href="https://x.com/jonhumlatnight">X</a></li>
-      </ul>
-    </section>
 
     <section id="about">
       <h2>About</h2>
@@ -186,21 +206,45 @@
 
       <h4>~July 2026~</h4>
 
-      <p><a href="https://huggingface.co/Zyphra/ZUNA1.1"> ZUNA1.1</a> is now out. Same arch as <a href="https://huggingface.co/Zyphra/ZUNA"> ZUNA1</a> but with variable-length context and more diverse dropout schemes!</p>
+      <div class="release-entry">
+        <a href="images/releases/zuna11_architecture.png">
+          <img class="release-figure" src="images/releases/zuna11_architecture.png" alt="ZUNA1.1 encoder and decoder architecture" width="368" height="184" loading="lazy" decoding="async" />
+        </a>
+        <div class="release-copy">
+          <p><a href="https://huggingface.co/Zyphra/ZUNA1.1"> ZUNA1.1</a> is now out. Same arch as <a href="https://huggingface.co/Zyphra/ZUNA"> ZUNA1</a> but with variable-length context and more diverse dropout schemes!</p>
+        </div>
+      </div>
 
       <h4>~June 2026~</h4>
       
-  <p>Completed during my PhD at Columbia, we released <a href="https://github.com/jonathanhuml/cassm"> CASSM</a>, ("Computation-Aware State-Space Model") a highly scalable Bayesian state-space framework for predicting single-cell neural activity. You can install it with</p>
-      <p><code>pip install cassm</code></p>
+      <div class="release-entry">
+        <a href="images/releases/cassm.png">
+          <img class="release-figure" src="images/releases/cassm.png" alt="CASSM predicted and true neural activity rates over time, with uncertainty bands" width="368" height="184" loading="lazy" decoding="async" />
+        </a>
+        <div class="release-copy">
+          <p>Completed during my PhD at Columbia, we released <a href="https://github.com/jonathanhuml/cassm"> CASSM</a>, ("Computation-Aware State-Space Model") a highly scalable Bayesian state-space framework for predicting single-cell neural activity. You can install it with</p>
+          <p><code>pip install cassm</code></p>
 
-      <p>The project site is available at <a href="https://cassm-torch.com/">cassm-torch.com</a></p>
-      <p>A preprint is available on <a href="https://arxiv.org/abs/2606.01468">arXiv</a> and we will be giving a talk at the 2nd International Conference on Probabilistic Numerics in Finland...coming soon!</p>
+          <p>The project site is available at <a href="https://cassm-torch.com/">cassm-torch.com</a></p>
+          <p>A preprint is available on <a href="https://arxiv.org/abs/2606.01468">arXiv</a> and we will be giving a talk at the 2nd International Conference on Probabilistic Numerics in Finland...coming soon!</p>
+        </div>
+      </div>
 
       <h4>~February 2026~</h4>
       
   <p>A new foundation model from Zyphra! We released <a href="https://huggingface.co/Zyphra/ZUNA"> ZUNA</a>, a 380-million parameter diffusion autoencoder for EEG super-resolution. You can install it with</p>
       <p><code>pip install zuna</code></p>
       <p>Please let me know if you have any issues or questions. You can also submit a pull request on the <a href="https://github.com/Zyphra/zuna">GitHub repository</a></p>
+    </section>
+
+    <section id="links" class="box">
+      <h2 style="margin:0 0 10px 0;">Links</h2>
+      <ul style="margin:0; padding-left:18px;">
+        <li><a href="https://www.linkedin.com/in/jonhuml/">LinkedIn</a></li>
+        <li><a href="https://github.com/jonathanhuml">Github</a></li>
+        <li><a href="https://scholar.google.com/citations?user=OHSoU54AAAAJ&hl=en&oi=ao">Google Scholar</a></li>
+        <li><a href="https://x.com/jonhumlatnight">X</a></li>
+      </ul>
     </section>
 
     <footer>
